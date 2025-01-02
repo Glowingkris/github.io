@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избери филм</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигационно меню -->
+    <div class="navbar">
+        <a href="#" class="logo"><img src="logo.png" alt="Лого"></a>
+        <div class="menu">
+            <a href="#">Начало</a>
+            <a href="about.html">За нас</a>
+            <a href="contact.html">Контакт</a>
+            <a href="vip.html" class="vip-link">VIP</a> <!-- Добавен линк към VIP -->
+        </div>
+    </div>
+
+    <!-- Основно съдържание -->
+    <div class="container">
+        <h1>Произволен филм</h1>
+        <label for="genre">Избери жанр:</label>
+        <select id="genre">
+            <option value="">Всички жанрове</option>
+            <option value="sci-fi">Научна фантастика</option>
+            <option value="romance">Романтика</option>
+            <option value="action">Екшън</option>
+            <option value="drama">Драма</option>
+            <option value="superhero">Супергерои</option>
+        </select>
+        <button onclick="chooseRandomMovie()">Избери филм</button>
+        <div id="result"></div>
+
+        <!-- Статистика -->
+        <div class="stats">
+            <div class="stat">
+                <p><strong>Филми:</strong> 120</p>
+            </div>
+            <div class="stat">
+                <p><strong>Жанрове:</strong> 5</p>
+            </div>
+            <div class="stat">
+                <p><strong>Актьори:</strong> 45</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

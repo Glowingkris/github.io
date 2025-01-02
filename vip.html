@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Планове</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигационно меню -->
+    <div class="navbar">
+        <a href="#" class="logo"><img src="logo.png" alt="Лого"></a>
+        <div class="menu">
+            <a href="index.html">Начало</a>
+            <a href="about.html">За нас</a>
+            <a href="contact.html">Контакт</a>
+            <a href="#" class="vip-link">VIP</a>
+        </div>
+    </div>
+
+    <!-- Основно съдържание -->
+    <div class="container">
+        <h1>VIP Планове</h1>
+        <div class="vip-plans">
+            <div class="plan">
+                <h2>Сребърен План</h2>
+                <p>Цена: 20 лв./месец</p>
+                <ul>
+                    <li>Достъп до 50 VIP филма</li>
+                    <li>Специални препоръки</li>
+                    <li>Без реклами</li>
+                </ul>
+                <button onclick="showPaymentMenu('Сребърен План', 20)">Избери</button>
+            </div>
+            <div class="plan">
+                <h2>Златен План</h2>
+                <p>Цена: 50 лв./месец</p>
+                <ul>
+                    <li>Достъп до 100 VIP филма</li>
+                    <li>Ексклузивни прожекции</li>
+                    <li>Приоритетна поддръжка</li>
+                </ul>
+                <button onclick="showPaymentMenu('Златен План', 50)">Избери</button>
+            </div>
+            <div class="plan">
+                <h2>Платинен План</h2>
+                <p>Цена: 100 лв./месец</p>
+                <ul>
+                    <li>Неограничен достъп до VIP съдържание</li>
+                    <li>Персонализирани препоръки</li>
+                    <li>VIP клиентска линия</li>
+                </ul>
+                <button onclick="showPaymentMenu('Платинен План', 100)">Избери</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модално меню за плащане -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePaymentMenu()">&times;</span>
+            <h2 id="planTitle"></h2>
+            <p>Цена: <span id="planPrice"></span> лв.</p>
+            <form>
+                <label for="name">Име:</label>
+                <input type="text" id="name" placeholder="Вашето име">
+                <label for="card">Номер на карта:</label>
+                <input type="text" id="card" placeholder="XXXX-XXXX-XXXX-XXXX">
+                <label for="expiration">Валидност:</label>
+                <input type="text" id="expiration" placeholder="MM/ГГ">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="123">
+                <button type="submit">Плати</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

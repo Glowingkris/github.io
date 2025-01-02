@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигационно меню -->
+    <div class="navbar">
+        <a href="index.html" class="logo"><img src="logo.png" alt="Лого"></a>
+        <div class="menu">
+            <a href="index.html">Начало</a>
+            <a href="about.html">За нас</a>
+            <a href="contact.html">Контакт</a>
+        </div>
+    </div>
+
+    <!-- Контактна форма -->
+    <div class="container">
+        <h1>Контакт с нас</h1>
+        <form>
+            <label for="name">Вашето име:</label>
+            <input type="text" id="name" name="name" placeholder="Вашето име..." required>
+            
+            <label for="email">Вашият имейл:</label>
+            <input type="email" id="email" name="email" placeholder="Вашият имейл..." required>
+            
+            <label for="message">Вашето съобщение:</label>
+            <textarea id="message" name="message" placeholder="Вашето съобщение..." required></textarea>
+
+            <button type="submit">Изпрати</button>
+        </form>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
