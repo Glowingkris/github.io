@@ -348,3 +348,68 @@ button {
     font-size: 1.5rem;  /* Увеличаваме размера на статистиката */
     font-weight: bold;
 }
+/* За екрани с ширина под 768px (типичен размер за таблети и телефони) */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* По-малък текст за мобилни устройства */
+    }
+
+    .navbar {
+        flex-direction: column; /* Менюто се подрежда вертикално */
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar .menu {
+        flex-direction: column; /* Подравняване на връзките вертикално */
+        gap: 10px;
+    }
+
+    .container {
+        width: 95%; /* По-малка ширина за мобилни */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3rem; /* Намален размер на заглавието */
+    }
+
+    select, button {
+        font-size: 1rem; /* Намаляване на шрифта за елементи */
+        padding: 10px;
+    }
+
+    .vip-plans {
+        flex-direction: column; /* Вертикално подреждане на VIP плановете */
+        gap: 15px;
+    }
+
+    .plan {
+        width: 90%; /* По-тясно, за да се побира на малки екрани */
+    }
+}
+
+/* За екрани с ширина под 480px (типичен размер за телефони) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem; /* Още по-малък размер за заглавието */
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .plan h2 {
+        font-size: 1.5rem; /* По-малки заглавия на плановете */
+    }
+
+    button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    #result {
+        font-size: 1.2rem; /* Намаляване на текста на резултатите */
+    }
+}
+
